@@ -1,0 +1,65 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid black;
+}
+
+.message {
+    text-align: center;
+}
+
+h3 {
+    color: #6c5ce7;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a3da1;
+}
+
+#op {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    overflow:scroll;
+    flex-wrap: wrap;
+   
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}

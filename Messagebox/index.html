@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
+        <div class="message">
+            <p >
+                <h3 style="display: flex; justify-content: center; text-align: center; align-items: center; color: rgb(41, 8, 173);">
+                    Pass the message</h3>
+            </p>
+            <p>
+                <label for="message-input">Enter a message</label>
+                <br>
+                <button style="border-radius: 5px 0 0 5px;"><i class="fa-solid fa-envelope"></i></button>
+                <input type="text" placeholder="give input here" id="input">
+
+            </p>
+            <p>
+                <button onclick=displaymsg()>submit <i class="fa-regular fa-envelope-open"></i> </button>
+            </p>
+            <div>
+                 <p><h2 id="op" style="text-align: center; text-transform: uppercase; "></h2></p>
+            </div>
+           
+
+        </div>
+
+    </div>
     
 </body>
+<script src="index.js"></script>
 </html>
