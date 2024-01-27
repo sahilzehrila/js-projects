@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container {
+            height: 90%;
+            width: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #hex{
+            text-align: center;
+            border: 1px solid black;
+        }
+         #hh{
+            font-size: 2rem;
+            text-transform: uppercase;
+            animation: animation 5s infinite alternate;
+        }
+        @keyframes  animation {
+        
+            0%{
+                color: aqua;
+            }
+            20%{
+                color: blue;
+            }
+            40%{
+                color: yellow;
+            }
+            60%{
+                color: tomato;
+            }
+            80%{
+                color: blueviolet;
+            }
+            100%{
+                color: yellowgreen;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <h1 id="hh">click below to see hex-code</h1>
+            <h2>the hex code is  <span id="hex">#00000</span></h2>
+            <button id="btn" onclick="cl()">click me TO change colour</button>
+
+        </div>
+    </div>
+    
+</body>
+<script>
+function cl(){
+    var hexnum = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+    var hexcode = '';
+    for(var i=0 ;i<6;i++){
+        var x = Math.floor((Math.random())*hexnum.length);
+        hexcode += hexnum[x];
+        
+    }
+    document.getElementsByTagName("body")[0].style.background ="#"+ hexcode
+    document.getElementById("hex").innerHTML = "#"+hexcode;
+}
+    
+</script>
+</html>
