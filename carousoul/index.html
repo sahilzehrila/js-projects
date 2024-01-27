@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>carousoul</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    .imageclass{
+        display: none;
+    }.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imageclass {
+    display: none;
+}
+
+.imageclass img {
+    width: 100%;
+    display: block;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.button-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prev {
+    left: 10px;
+    position: absolute;
+    top: 9rem;
+}
+
+#next {
+    right: 10px;
+    position: absolute;
+    top: 9rem;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active-dot {
+    background-color: #333;
+}
+
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="imageclass" id="img">
+            <img src="./images//135635.jpg" alt="images" width="100%">
+        </div>
+        <div class="imageclass">
+            <img src="./images/2759.jpg" alt="images" width="100%">
+        </div>
+        <div class="imageclass">
+            <img src="./images/606242.jpg" alt="images" width="100%">
+        </div>
+        <div class="imageclass">
+            <img src="./images/664410.jpg" alt="images" width="100%">
+        </div>
+        <div class="imageclass">
+            <img src="./images/698363.png" alt="images" width="100%">
+        </div>
+        <div class="imageclass">
+            <img src="./images/84956.jpg" alt="images" width="100%">
+        </div>
+        <div class="imageclass">
+            <img src="./images/941221.jpg" alt="images" width="100%">
+        </div>
+        <button id="prev" >  <i onclick=showimg(-1) class="fa-solid fa-left-long"></i></button>
+      <button id="next">      <i   onclick=showimg(1) class="fa-solid fa-right-long"></i></button>
+  
+  <div class="dots">
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+   <span class="dot"></span>
+
+
+  </div>
+    </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
