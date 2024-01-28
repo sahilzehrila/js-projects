@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tip">
+            <h1>tip calculator</h1>
+
+            <input type="text" id="bill_amount" placeholder="Bill Amount"/> 
+            <select id="service_rate">
+                <option value="0">0%</option>
+                <option value="5">5%</option>
+                <option value="20">20%</option>
+                <option value="40">40%</option>
+                <option value="70">70%</option>
+                <option value="90">90%</option>
+                <option value="100">100%</option>
+
+            </select>
+            <button onclick="calculateTip()">Calculate Tip!</button><br/><br/>
+            <p>Bill amount: $<span id="bill"></span></p>
+            <p>Service charge rate: <span id="chargeRate"></span></p>
+            <p>Amount of tip : $<span id="tipp"></span></p>
+
+            
+
+
+
+        </div>
+    </div>
+    
+</body>
+<script src="js.js"></script>
+</html>
