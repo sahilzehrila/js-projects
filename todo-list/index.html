@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="todo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <div class="todo">
+            <h1>Todo list</h1>
+            <div  style="height:  32px; display: flex; justify-content: space-between; ">
+                <i style="height: 8rem; width: 3rem; color: rgb(0, 4, 255);"  onclick=clearitem() class="fa-solid fa-eraser" id="icon"></i><input type="text" id="uip"><i style="height: 8rem; width: 3rem; color: rgb(0, 4, 255);"   class="fa-sharp fa-solid fa-plus" id="icon" onclick=add()></i>
+            </div>
+            <br>
+            <div id="items">
+              
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="todo.js"></script>
+</html>
