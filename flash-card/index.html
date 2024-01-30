@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h1>flash-card-generator</h1>
+            <button id="cbutton" onclick="alldelete()">Delete All</button>
+        </div>
+
+         <div class="create">
+             <h2>flash card</h2>
+             <label for="question">Question:</label><br>
+             <textarea type="text"  id="q" cols="40" rows="3" id="question" name="question"> </textarea><br>
+             <label for="answer">Answer:</label><br>
+             <textarea type="text"  id="a" cols="40" rows="3" id="answer" name="answer"> </textarea><br>
+             <button onclick="addCard()">Add Card</button>
+             <button onclick="carddelete()">Delete Card</button>
+         </div>
+
+         <div class="showcard">
+           
+             
+
+
+         </div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
