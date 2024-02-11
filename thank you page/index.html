@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thank you page</title>
+    <style>
+      /* Mixin for vertical alignment */
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Global styles */
+body, html {
+    background: linear-gradient(to right, #5900ff ,#2142fc );
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif; /* Corrected spelling */
+}
+
+/* Wrapper styles */
+#wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 15% auto 0;
+    padding: 0 20px;
+}
+
+/* H1 styles */
+h1 {
+    color: #EEE;
+    text-shadow: -1px -2px 3px rgba(17, 17, 17, 0.3);
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin-bottom: -5px;
+}
+
+/* Underline styles */
+/* Assuming you meant h1 with underline */
+h1 {
+    position: relative;
+}
+
+
+/* H3 styles */
+h3 {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #EEE;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    #wrapper {
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Further adjustments for mobile screens */
+    #wrapper {
+        margin-top: 20%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div id="wrapper" class="animated zoomIn">
+  <!-- We make a wrap around all of the content so that we can simply animate all of the content at the same time. I wanted a zoomIn effect and instead of placing the same class on all tags, I wrapped them into one div! -->
+<h1>
+  <!-- The <h1> tag is the reason why the text is big! -->
+    <span style="background: linear-gradient(to right, 
+    rgb(221, 255, 0), rgb(255, 50, 241), rgb(0, 255, 255), rgb(0, 255, 0), yellow, orange, red); 
+    -webkit-background-clip: text; background-clip: text; 
+    -webkit-text-fill-color: transparent;">
+Thank you!
+</span>
+
+
+  <!-- The underline makes a border on the top and on the bottom of the text -->
+</h1>
+<h3 >
+    For visiting campus canvas! <br> We appreciate your interest and support. If you have any questions or feedback, feel free to reach out to us. <br> <br>
+   
+  
+<br> <br>
+    ~CampusCanvas
+</h3>
+</div>
+</body>
+<script>
+    $( document ).ready(function() {
+  // perform some jQuery when page is loaded
+  
+$("h1").hover(function() { 
+  // when user is hovering the h1
+  $( this ).addClass("animated infinite pulse"); 
+  // we add pulse animation and to infinite
+}, function() {
+  // when user no longer hover on the h1
+  $( this ).removeClass("animated infinite pulse");
+  // we remove the pulse
+});
+});
+
+
+</script>
+</html>
